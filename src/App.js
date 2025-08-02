@@ -1,71 +1,41 @@
 import React from "react";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { Phone, Mail, Hammer } from "lucide-react";
 
-export default function GlassInstallationCompany() {
+export default function App() {
   return (
-    <div className="min-h-screen bg-white text-gray-900 p-6 space-y-12">
-      {/* Header */}
-      <header className="text-center space-y-2">
-        <h1 className="text-4xl font-bold">Crystal Clear Glass</h1>
-        <p className="text-lg text-gray-600">Precision Glass Installation for Homes & Businesses</p>
+    <div style={{ fontFamily: 'sans-serif', lineHeight: 1.6, padding: '2rem', maxWidth: '800px', margin: '0 auto' }}>
+      <header style={{ textAlign: 'center', marginBottom: '3rem' }}>
+        <h1 style={{ fontSize: '2.5rem', color: '#1f2937' }}>ClearView Glass Installation</h1>
+        <p style={{ fontSize: '1.1rem', color: '#4b5563' }}>Professional, Affordable, and Fast Glass Solutions</p>
       </header>
 
-      {/* Services Section */}
-      <section className="grid md:grid-cols-3 gap-6">
-        <Card className="shadow-xl">
-          <CardContent className="p-6 space-y-4">
-            <Hammer className="text-blue-500 w-8 h-8" />
-            <h2 className="text-xl font-semibold">Residential Glass</h2>
-            <p>Window replacements, shower enclosures, mirrors, and custom solutions for your home.</p>
-          </CardContent>
-        </Card>
-        <Card className="shadow-xl">
-          <CardContent className="p-6 space-y-4">
-            <Hammer className="text-blue-500 w-8 h-8" />
-            <h2 className="text-xl font-semibold">Commercial Installations</h2>
-            <p>Storefront glass, office partitions, security glass, and more tailored to your business needs.</p>
-          </CardContent>
-        </Card>
-        <Card className="shadow-xl">
-          <CardContent className="p-6 space-y-4">
-            <Hammer className="text-blue-500 w-8 h-8" />
-            <h2 className="text-xl font-semibold">Emergency Repairs</h2>
-            <p>24/7 emergency glass repair and replacement with fast response time and professional care.</p>
-          </CardContent>
-        </Card>
+      <section style={{ marginBottom: '2rem' }}>
+        <h2 style={{ fontSize: '1.5rem', color: '#1f2937' }}>Our Services</h2>
+        <ul>
+          <li>✅ Home window installation & replacement</li>
+          <li>✅ Commercial glass storefronts</li>
+          <li>✅ Shower enclosures & glass railings</li>
+          <li>✅ Emergency glass repair (24/7)</li>
+        </ul>
       </section>
 
-      {/* About Section */}
-      <section className="text-center max-w-2xl mx-auto">
-        <h2 className="text-2xl font-bold mb-2">Why Choose Us?</h2>
-        <p className="text-gray-700">
-          With over 15 years of experience, Crystal Clear Glass provides top-quality installation,
-          outstanding customer service, and unbeatable prices. We’re fully licensed, insured, and
-          dedicated to making your glass project crystal clear.
+      <section style={{ marginBottom: '2rem' }}>
+        <h2 style={{ fontSize: '1.5rem', color: '#1f2937' }}>Why Choose ClearView?</h2>
+        <p>
+          With over 20 years of experience, ClearView provides premium glass installation services for residential and
+          commercial clients. We're licensed, insured, and dedicated to making your project hassle-free.
         </p>
       </section>
 
-      {/* Contact Section */}
-      <section className="bg-blue-50 p-6 rounded-2xl shadow-md text-center space-y-4">
-        <h2 className="text-2xl font-bold">Get a Free Estimate</h2>
-        <p>Reach out to our team to discuss your glass installation needs today.</p>
-        <div className="flex flex-col md:flex-row justify-center gap-4">
-          <Button className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white">
-            <Phone className="w-4 h-4" /> Call Us: (555) 123-4567
-          </Button>
-          <Button className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white">
-            <Mail className="w-4 h-4" /> Email: contact@crystalglass.com
-          </Button>
-        </div>
+      <section style={{ marginBottom: '2rem' }}>
+        <h2 style={{ fontSize: '1.5rem', color: '#1f2937' }}>Contact Us</h2>
+        <p>📞 Call: (555) 987-6543</p>
+        <p>📧 Email: info@clearviewglass.com</p>
+        <p>📍 Location: 123 Glass Street, Window City, USA</p>
       </section>
 
-      {/* Footer */}
-      <footer className="text-center text-gray-500 text-sm pt-10">
-        &copy; 2025 Crystal Clear Glass. All rights reserved.
+      <footer style={{ textAlign: 'center', color: '#6b7280', fontSize: '0.9rem', paddingTop: '2rem' }}>
+        &copy; 2025 ClearView Glass. All rights reserved.
       </footer>
     </div>
   );
 }
-
